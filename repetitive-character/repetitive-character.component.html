@@ -1,0 +1,16 @@
+<hr>
+<p>repetitive-character works!</p>
+<h2>-- Find Repetitive Character in a String --</h2>
+<br>
+<div>
+  <label for="inputString">Enter a string:</label>
+  <input id="inputString" [(ngModel)]="inputString" placeholder="Type here..." />
+</div>
+<br>
+<div>
+  <button (click)="findRepetitve()">Analyze</button>
+</div>
+
+<div *ngIf="mostRepetitiveChar">
+  <strong>The most repetitive character is</strong>: {{ mostRepetitiveChar }}
+</div>
